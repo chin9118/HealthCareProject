@@ -5,10 +5,9 @@ import java.io.IOException;
 import org.testng.Assert;
 import org.testng.annotations.Test;
 
-import Utilities.ExcelRead;
+import pageClasses.FindAPatient;
 import pageClasses.HomePageClass;
 import pageClasses.LoginPageClass;
-import pageClasses.FindAPatient;
 import pageClasses.RegisterAPatient;
 
 public class RegisterAPatientTest extends BaseClass {
