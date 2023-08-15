@@ -2,16 +2,16 @@
 <testng-results ignored="2" total="3" passed="1" failed="0" skipped="0">
   <reporter-output>
   </reporter-output>
-  <suite started-at="2023-08-14T00:43:01 AEST" name="Default suite" finished-at="2023-08-14T00:43:19 AEST" duration-ms="17899">
+  <suite started-at="2023-08-15T12:45:27 AEST" name="Default suite" finished-at="2023-08-15T12:45:53 AEST" duration-ms="25933">
     <groups>
     </groups>
-    <test started-at="2023-08-14T00:43:01 AEST" name="Default test" finished-at="2023-08-14T00:43:19 AEST" duration-ms="17899">
+    <test started-at="2023-08-15T12:45:27 AEST" name="Default test" finished-at="2023-08-15T12:45:53 AEST" duration-ms="25933">
       <class name="executePageClasses.RegisterAPatientTest">
-        <test-method is-config="true" signature="beforeMethod()[pri:0, instance:executePageClasses.RegisterAPatientTest@710c2b53]" started-at="2023-08-14T00:43:02 AEST" name="beforeMethod" finished-at="2023-08-14T00:43:07 AEST" duration-ms="4923" status="PASS">
+        <test-method is-config="true" signature="beforeMethod()[pri:0, instance:executePageClasses.RegisterAPatientTest@710c2b53]" started-at="2023-08-15T12:45:28 AEST" name="beforeMethod" finished-at="2023-08-15T12:45:35 AEST" duration-ms="7156" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- beforeMethod -->
-        <test-method signature="verifyToRegisterAPatient(java.lang.String,java.lang.String)[pri:0, instance:executePageClasses.RegisterAPatientTest@710c2b53]" started-at="2023-08-14T00:43:07 AEST" name="verifyToRegisterAPatient" data-provider="loginsuccessful" finished-at="2023-08-14T00:43:19 AEST" duration-ms="12232" status="PASS">
+        <test-method signature="verifyTheRegisteredPatientIsFoundOrNotInPatientRecordTable(java.lang.String,java.lang.String)[pri:0, instance:executePageClasses.RegisterAPatientTest@710c2b53]" started-at="2023-08-15T12:45:35 AEST" name="verifyTheRegisteredPatientIsFoundOrNotInPatientRecordTable" data-provider="loginsuccessful" finished-at="2023-08-15T12:45:53 AEST" duration-ms="17782" status="PASS">
           <params>
             <param index="0">
               <value>
@@ -26,8 +26,8 @@
           </params>
           <reporter-output>
           </reporter-output>
-        </test-method> <!-- verifyToRegisterAPatient -->
-        <test-method is-config="true" signature="afterMethod()[pri:0, instance:executePageClasses.RegisterAPatientTest@710c2b53]" started-at="2023-08-14T00:43:19 AEST" name="afterMethod" finished-at="2023-08-14T00:43:19 AEST" duration-ms="0" status="PASS">
+        </test-method> <!-- verifyTheRegisteredPatientIsFoundOrNotInPatientRecordTable -->
+        <test-method is-config="true" signature="afterMethod()[pri:0, instance:executePageClasses.RegisterAPatientTest@710c2b53]" started-at="2023-08-15T12:45:53 AEST" name="afterMethod" finished-at="2023-08-15T12:45:53 AEST" duration-ms="0" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- afterMethod -->

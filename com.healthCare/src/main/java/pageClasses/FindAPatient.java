@@ -8,6 +8,7 @@ import org.openqa.selenium.WebElement;
 import org.openqa.selenium.support.FindBy;
 import org.openqa.selenium.support.PageFactory;
 
+import Utilities.ExplicitWaitClass;
 import Utilities.GeneralUtilities;
 
 public class FindAPatient {
@@ -15,6 +16,8 @@ public class FindAPatient {
 		WebDriver driver;
 
 		GeneralUtilities gl = new GeneralUtilities();
+		ExplicitWaitClass ew = new ExplicitWaitClass();
+	
 		
 		
 		public FindAPatient(WebDriver driver) {
@@ -27,8 +30,12 @@ public class FindAPatient {
 		@FindBy(xpath  = "//table[@id='patient-search-results-table']//th")
 		List<WebElement> col;
 		
+		@FindBy(xpath = "//table[@id='patient-search-results-table']")
+		WebElement table;
+		
 		public Boolean ifPatientNameDisplayed(String name)
-		{
+		{	
+			ew.visibilityOfElementElementLocated(driver, table);
 			int rowCount = row.size();   
 			int colCount = col.size();	
 			System.out.println(rowCount+"  "+colCount);   
