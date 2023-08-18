@@ -26,7 +26,7 @@ public class RegisterAPatientTest extends BaseClass {
 		hp.clickOnRegisterAPatient();
 
 		rp = new RegisterAPatient(driver);
-		rp.enterFullname(rp.readStringData(5, 2), rp.readStringData(6, 2));
+		rp.enterFullname(rp.readStringData(5, 3), rp.readStringData(6, 3));
 		rp.selectGender(0);
 
 		rp.enterDateOfBirth(rp.readIntData(7, 1), 3, rp.readIntData(8, 1));
@@ -37,7 +37,7 @@ public class RegisterAPatientTest extends BaseClass {
 		rp.clickOnConfirm();
 
 		String actualresult = rp.confirmPatientNameIsDisplayed();
-		String expectedResult = rp.readStringData(5, 2);
+		String expectedResult = rp.readStringData(5, 3);
 		Assert.assertEquals(actualresult, expectedResult);
 	}
 
@@ -85,7 +85,7 @@ public class RegisterAPatientTest extends BaseClass {
 		rp = new RegisterAPatient(driver);
 		String gName = rp.readStringData(5, 1);
 		String fName = rp.readStringData(6, 1);
-		;
+		
 		rp.enterFullname(gName, fName);
 
 		rp.selectGender(0);

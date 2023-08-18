@@ -6,7 +6,6 @@ import org.testng.Assert;
 import org.testng.annotations.Test;
 
 import pageClasses.ActiveVisit;
-import pageClasses.FindAPatient;
 import pageClasses.HomePageClass;
 import pageClasses.LoginPageClass;
 import pageClasses.RegisterAPatient;

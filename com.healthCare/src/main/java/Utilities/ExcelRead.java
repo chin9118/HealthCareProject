@@ -15,7 +15,7 @@ public class ExcelRead {
 	static XSSFSheet sh;
 	public static String getStringData(int a,int b)throws IOException
 	{
-		f=new FileInputStream("C:\\Users\\Jishnu\\git\\HealthCareProject\\com.healthCare\\src\\test\\resources\\excel.xlsx");		
+		f=new FileInputStream(System.getProperty("user.dir")+"\\src\\test\\resources\\excel.xlsx");	//set path of file	
 		x=new XSSFWorkbook(f);
 		sh=x.getSheet("sheet1");
 		Row r=sh.getRow(a);
@@ -24,7 +24,7 @@ public class ExcelRead {
 	}
 	public static String getIntegerData(int a,int b) throws IOException
 	{
-		f=new FileInputStream("C:\\Users\\Jishnu\\git\\HealthCareProject\\com.healthCare\\src\\test\\resources\\excel.xlsx");		
+		f=new FileInputStream(System.getProperty("user.dir")+"\\src\\test\\resources\\excel.xlsx");		
 		x=new XSSFWorkbook(f);
 		sh=x.getSheet("sheet1");
 		Row r=sh.getRow(a);
