@@ -11,11 +11,11 @@
   <test thread-count="5" name="Grouping">
 	  <parameter name="browser" value="chrome"></parameter>
     <classes>
-      <!-- <class name="executePageClasses.ActiveVisitTestClass"/> 
-      <class name="executePageClasses.RegisterAPatientTest"/> 
-      <class name="executePageClasses.FindAPatientTestClass"/>-->
+      <class name="executePageClasses.ActiveVisitTestClass"/> 
+     <!--  <class name="executePageClasses.RegisterAPatientTest"/> 
+      <class name="executePageClasses.FindAPatientTestClass"/>
       <class name="executePageClasses.LoginPageTestClass"/>
-      <!--<class name="executePageClasses.HomePageTestClass"/>
+      <class name="executePageClasses.HomePageTestClass"/>
       <class name="executePageClasses.CaptureVitalsTestClass"/>--> 
     </classes>
   </test> <!-- Grouping -->
