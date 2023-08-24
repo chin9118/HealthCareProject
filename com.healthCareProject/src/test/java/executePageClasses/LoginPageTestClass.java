@@ -15,7 +15,7 @@ public class LoginPageTestClass extends BaseClass {
 	 LoginPageClass lp;
 	 HomePageClass hp;
 	 RegisterAPatient rp;
-	 @Test(retryAnalyzer = RetryAnalyzer.class,groups = {"group1"})
+	 @Test(priority=0,retryAnalyzer = RetryAnalyzer.class,groups = {"group1"})
 	 public void verifyTheCorrectSiteIsLoadedWhileHittingTheURL() throws IOException
 	 {
 		 lp=new LoginPageClass(driver);
@@ -27,7 +27,7 @@ public class LoginPageTestClass extends BaseClass {
 		
 	 }
 	 
-  @Test(groups = {"group2"},dataProviderClass = DataProviderClass.class, dataProvider = "loginsuccessful",retryAnalyzer = RetryAnalyzer.class)
+  @Test(priority=1, groups = {"group2"},dataProviderClass = DataProviderClass.class, dataProvider = "loginsuccessful",retryAnalyzer = RetryAnalyzer.class)
   public void verifySuccessfulLogin(String uname,String pwd) {
 	  lp=new LoginPageClass(driver);
 	  lp.loginAsRegistrationDesk(uname,pwd);
@@ -38,7 +38,7 @@ public class LoginPageTestClass extends BaseClass {
   }
   
   
-  @Test(groups = {"group2"},dataProviderClass = DataProviderClass.class, dataProvider = "login",retryAnalyzer = RetryAnalyzer.class)
+  @Test(priority=2, groups = {"group2"},dataProviderClass = DataProviderClass.class, dataProvider = "login",retryAnalyzer = RetryAnalyzer.class)
   public void unsuccessfulLogin(String uname,String pass) {
 	  lp=new LoginPageClass(driver);
 	  lp.loginAsRegistrationDesk(uname,pass);
